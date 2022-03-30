@@ -1,4 +1,5 @@
 const { app, BrowserWindow, ipcMain } = require('electron')
+const path = require('path')
 
 function createWindow() {
   const mainWindow = new BrowserWindow({
@@ -6,13 +7,14 @@ function createWindow() {
     height: 600,
     frame: false,
     transparent: true,
+    icon: path.join(__dirname, 'img/logo.png'),
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,
     }
   })
 
-  mainWindow.loadFile('index.html')
+  mainWindow.loadFile(path.join(__dirname, 'index.html'))
 
   return mainWindow;
 }
