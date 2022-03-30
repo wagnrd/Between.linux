@@ -9,7 +9,7 @@ But it should also build and run on any other platform which is supported by [El
 
 # Broken features
 
-Virtually everything works, except some things that I couldn't get to work on Linux:
+It is very usable and almost everything works, except some minor things:
 
  - **No read confirmation**
     - All messages read in this app won't trigger the read confirmation on other devices
@@ -18,7 +18,7 @@ Virtually everything works, except some things that I couldn't get to work on Li
  - **No banner notification** / **Only audio notification**
     - No banners will be displayed when messages come in while the app is in background/minimized
     - Only a audio notifications will be triggered
- - **Smiley picker doesn show everything**
+ - **Smiley picker doesn't show everything**
     - The smiley picker doesn't show all the smileys there are
     - Though they are correclty shown in the chat
     - **Only** affects the small built-in stickers on the first page
