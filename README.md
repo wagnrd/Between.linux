@@ -4,7 +4,7 @@
 
 Between.linux is a kind-of open source version of the proprietary relationship chatting app [Between](https://between.us).
 
-The primary target is **Linux**, since there is no official app for Linux.  
+The primary target is **Linux**, since there is no official app for that.  
 But it should also build and run on any other platform which is supported by [Electron](https://www.electronjs.org).
 
 # Broken features
