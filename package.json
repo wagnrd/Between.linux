@@ -1,0 +1,12 @@
+{
+  "name": "between.linux",
+  "version": "1.0.0",
+  "description": "Between for Linux",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^18.0.0"
+  }
+}

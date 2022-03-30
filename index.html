@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Between</title>
+    <meta charset="UTF-8">
+</head>
+
+<style>
+</style>
+
+<body ondragover="() => false" ondrop="() => false">
+    <script>
+        if (navigator.userAgent.match(/Between-Mac/i))
+            document.body.className = 'os-mac';
+        else
+            document.body.className = 'os-win';
+    </script>
+
+    <div id="app"></div>
+    <div id="dialogs"></div>
+
+    <script>
+        // Append cache buster for webpack-dev-server
+        document.write('<script src="build/app.js?' + Date.now() + '"></' + 'script>');
+    </script>
+</body>
+
+</html>
