@@ -18,19 +18,33 @@ Virtually everything works, except some things that I couldn't get to work on Li
  - **No Banner notification** / **Only audio notification**
     - No banners will be displayed when messages come in while the app is in background/minimized
     - Only a audio notifications will be triggered
+ - **Smiley picker doesn show everything**
+    - The smiley picker doesn't show all the smileys there are
+    - Though they are correclty shown in the chat
+    - **Only** affects the small built-in stickers on the first page
+    - **Not** the larger stickers
 
 # Installation
 
 ## Pre-build binary 
 
-W.I.P
+Comming soon!
 
 ## From source
 
+### Preparation
+
 ```bash
 git clone https://github.com/wagnrd/Between.linux.git
+cd Between.linux
+npm install
 ```
-### Run without compilation
+### Run without packaging
 ```bash
 npm start
+```
+
+### Make executable (deb/rpm/snap/...)
+```bash
+npm make
 ```
