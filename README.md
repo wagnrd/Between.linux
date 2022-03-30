@@ -11,11 +11,11 @@ But it should also build and run on any other platform which is supported by [El
 
 Virtually everything works, except some things that I couldn't get to work on Linux:
 
- - **No Read confirmation**
+ - **No read confirmation**
     - All messages read in this app won't trigger the read confirmation on other devices
     - The little hearts next to the "unread" message remain even when new messages have been sent from this app
     - So your partner won't be able to tell whether you read their message or not
- - **No Banner notification** / **Only audio notification**
+ - **No banner notification** / **Only audio notification**
     - No banners will be displayed when messages come in while the app is in background/minimized
     - Only a audio notifications will be triggered
  - **Smiley picker doesn show everything**
