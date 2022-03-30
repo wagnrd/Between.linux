@@ -1,7 +1,4 @@
 <img src="img/banner.png" alt="Between.linux banner" width="400" />
-<br />
-<br />
-<br />
 
 # What is it?
 
