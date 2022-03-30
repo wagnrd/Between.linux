@@ -26,7 +26,7 @@ Virtually everything works, except some things that I couldn't get to work on Li
 
 # Installation
 
-## Pre-build binary 
+## Pre-built binary 
 
 Comming soon!
 
