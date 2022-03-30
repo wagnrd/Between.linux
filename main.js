@@ -12,7 +12,6 @@ function createWindow() {
     }
   })
 
-  mainWindow.setIcon('img/logo.png')
   mainWindow.loadFile('index.html')
 
   return mainWindow;
