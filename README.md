@@ -7,7 +7,7 @@ Between.linux is a kind-of open source version of the proprietary relationship c
 The primary target is **Linux**, since there is no official app for Linux.  
 But it should also build and run on any other platform which is supported by [Electron](https://www.electronjs.org).
 
-# Features missing
+# Broken features
 
 Virtually everything works, except some things that I couldn't get to work on Linux:
 
