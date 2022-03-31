@@ -38,7 +38,7 @@ It is very usable and almost everything works, except some minor things:
 
 # Installation
 
-At the [Release page](github.com/wagnrd/Between.linux/releases/latest) you can find the latest pre-built Linux packages.
+At the [Release page](https://github.com/wagnrd/Between.linux/releases/latest) you can find the latest pre-built Linux packages.
 
 **Supported package formats:**
  - RPM
@@ -99,11 +99,11 @@ denoting the compatibility changes I had to make to get things working.
 
 **Example:**
 ```
-1.0.8_1
+1.0.8-1
 ```
 
  - `1.0.8` is the current version of the original app
- - `_1` is the version of the compatibility changes
+ - `-1` is the version of the compatibility changes
 
- So everytime the first version number, before the "_" increases, you should consider updating your package.  
+ So everytime the first version number, before the "-" increases, you should consider updating your package.  
  If you are waiting for compatibility updates, the second number is the one you have to look out for.
