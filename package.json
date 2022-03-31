@@ -1,7 +1,7 @@
 {
   "name": "between.linux",
-  "version": "1.0.0",
-  "description": "Between for Linux",
+  "version": "1.0.8",
+  "description": "Between, the couple chat app for Linux",
   "main": "main.js",
   "scripts": {
     "start": "electron-forge start",
@@ -12,20 +12,38 @@
     "@electron-forge/cli": "^6.0.0-beta.63",
     "@electron-forge/maker-deb": "^6.0.0-beta.63",
     "@electron-forge/maker-rpm": "^6.0.0-beta.63",
-    "@electron-forge/maker-squirrel": "^6.0.0-beta.63",
-    "@electron-forge/maker-zip": "^6.0.0-beta.63",
     "electron": "^18.0.0"
-  },
-  "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
   },
   "config": {
     "forge": {
-      "packagerConfig": {},
+      "packagerConfig": {
+        "icon": "img/logo.png"
+      },
       "makers": [
         {
+          "name": "@electron-forge/maker-rpm",
+          "config": {
+            "options": {
+              "name": "Between.linux",
+              "productName": "Between.linux",
+              "productDescription": "Between.linux is a Linux port of the proprietary couples chat app 'Between'.",
+              "genericName": "Chat Application",
+              "icon": "img/logo.png",
+              "license": "Proprietary",
+              "maintainer": "wagnrd"
+            }
+          }
+        },
+        {
           "name": "@electron-forge/maker-deb",
-          "config": {}
+          "config": {
+            "name": "Between.linux",
+            "productName": "Between.linux",
+            "productDescription": "Between.linux is a Linux port of the proprietary couples chat app 'Between'.",
+            "genericName": "Chat Application",
+            "icon": "img/logo.png",
+            "maintainer": "wagnrd"
+          }
         }
       ]
     }

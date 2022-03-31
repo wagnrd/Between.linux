@@ -27,25 +27,50 @@ It is very usable and almost everything works, except some minor things:
 
 # Installation
 
-## Pre-built binary 
+Pre-built installer packages comming soon!
 
-Comming soon!
+# Building from source
 
-## From source
-
-### Preparation
+## Preparation
 
 ```bash
 git clone https://github.com/wagnrd/Between.linux.git
 cd Between.linux
 npm install
 ```
-### Run without packaging
+
+## Run without packaging
+
+For testing or development purposes you can run the electron app without installing or building it with the following command:
+
 ```bash
 npm start
 ```
 
-### Make executable (deb/rpm/snap/...)
+## Build all targets
+
+This step will build all targets. If you don't want to build everything please refer to the *Troubleshooting* section below.
+
+### Dependencies
+
+This step also includes building an rpm and snap package. For this you need the **rpm package manager** installed on your local machine:  
+
 ```bash
-npm make
+sudo apt install rpm
 ```
+
+### Building
+
+After that you should be able to build all targets with the following:
+
+```bash
+npm run make
+```
+
+### Troubleshooting
+
+This has only be tested on Ubuntu. If you have trouble building everything, remove unwanted targets from the 
+electron-forge config inside of package.json.  
+
+The targets are configured in the **makers** property. The string behind the "@electron-forge/maker-*\<package-type\>*" 
+in the **name** property states the built package. Just delete everything you don't want to build.
