@@ -38,7 +38,11 @@ It is very usable and almost everything works, except some minor things:
 
 # Installation
 
-Pre-built installer packages comming soon!
+At the [Release page](github.com/wagnrd/Between.linux/releases/latest) you can find the latest pre-built Linux packages.
+
+**Supported package formats:**
+ - RPM
+ - DEB
 
 # Building from source
 
@@ -85,3 +89,21 @@ electron-forge config inside of package.json.
 
 The targets are configured in the **makers** property. The string behind the "@electron-forge/maker-*\<package-type\>*" 
 in the **name** property states the built package. Just delete everything you don't want to build.
+
+# Versioning
+
+With the versioning you can keep track of new app or compatibility releases.
+
+The version number in this project is composed from the original version number the code is based on and a continuous version number 
+denoting the compatibility changes I had to make to get things working.
+
+**Example:**
+```
+1.0.8_1
+```
+
+ - `1.0.8` is the current version of the original app
+ - `_1` is the version of the compatibility changes
+
+ So everytime the first version number, before the "_" increases, you should consider updating your package.  
+ If you are waiting for compatibility updates, the second number is the one you have to look out for.

@@ -1,6 +1,6 @@
 {
   "name": "between.linux",
-  "version": "1.0.8",
+  "version": "1.0.8_1",
   "description": "Between, the couple chat app for Linux",
   "main": "main.js",
   "scripts": {
