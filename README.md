@@ -8,6 +8,17 @@ It uses the official source code, which has been extracted from the original win
 The primary target is **Linux**, since there is no official app for that.  
 But it should also build and run on any other platform which is supported by [Electron](https://www.electronjs.org).
 
+## Changes
+
+Only a few changes have been made to the original source code, to make things like *closing*, *minimizing* and *changing opacity* of the app window to match the original behaviour.
+
+## Disclaimer
+
+I am **not** the original author of the Between app, **neither** do I claim ownership of the code in this repository.
+The copyright remains with the original author **Between Us Co.,Ltd**.
+
+If the original author wants me to take down this repository, I will happily do so immediately.
+
 # Broken features
 
 It is very usable and almost everything works, except some minor things:
